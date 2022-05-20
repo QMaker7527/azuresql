@@ -30,7 +30,7 @@ type Dialector struct {
 func (dialector Dialector) Name() string {
 	return "azuresql"
 }
-
+ 
 func Open(dsn string) gorm.Dialector {
 	return &Dialector{Config: &Config{DSN: dsn}}
 }
